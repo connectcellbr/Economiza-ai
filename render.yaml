@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: economiza-ai
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python servidor_precos.py
+    healthCheckPath: /api/health
